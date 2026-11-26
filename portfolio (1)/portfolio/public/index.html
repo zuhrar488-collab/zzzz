@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zuhra Rahmonova — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <a class="logo" href="#kirish">Zuhra Rahmonova</a>
+  <nav>
+    <a href="#kirish">Kirish</a>
+    <a href="#oqish">O'qish joyi</a>
+    <a href="#ishlar">Qilgan ishlarim</a>
+    <a href="#aloqa">Bog'lanish</a>
+  </nav>
+</header>
+
+<main>
+  <section id="kirish" class="page">
+    <div class="hero">
+      <div>
+        <h1>Salom, men Zuhra.</h1>
+        <p class="lead">Men prompter man: g'oyani aniq topshiriqqa aylantirib, sun'iy intellekt yordamida tayyor dasturlar yarataman. 2007-yilda Surxondaryo viloyati, Sariosiyo tumani, Sharg'un shahrida tug'ilganman.</p>
+        <a class="btn" href="#aloqa">Menga yozing</a>
+      </div>
+      <div class="demo" title="Qayta ko'rish uchun bosing">
+        <div class="demo-prompt"><span id="typed"></span><i class="caret"></i></div>
+        <ul class="demo-out" id="out"></ul>
+      </div>
+    </div>
+    <div class="recent">
+      <span>So'nggi ishlarim:</span>
+      <a href="#ishlar">Portfolio sayt</a>
+      <a href="#ishlar">Prompt orqali dasturlar</a>
+    </div>
+  </section>
+
+  <section id="oqish" class="page">
+    <h2>O'qish joyim</h2>
+    <ul class="time">
+      <li><b>Termiz davlat pedagogika instituti</b><span>2025 – hozir · Amaliy matematika yo'nalishi</span><p>Aniq fanlar pedagogika oliy maktabida o'qiyman.</p></li>
+      <li><b>4-maktab</b><span>Avvalgi o'quv joyi</span><p>Umumiy o'rta ta'limni shu maktabda olganman.</p></li>
+    </ul>
+  </section>
+
+  <section id="ishlar" class="page">
+    <h2>Qilgan ishlarim</h2>
+    <article class="work">
+      <h3>Shaxsiy portfolio sayt</h3>
+      <div><p>O'zim haqimda ma'lumot, o'qish joyim va ishlarim jamlangan sayt. Bog'lanish formasi orqali xabarlar to'g'ridan-to'g'ri Telegram botimga keladi. Sayt kodi sun'iy intellekt yordamida, mening topshiriqlarim asosida yaratilgan.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>Telegram bot</span></div></div>
+    </article>
+    <article class="work">
+      <h3>Prompt orqali dasturlar yaratish</h3>
+      <div><p>Dasturlash tilini chuqur bilmasam ham, g'oyani aniq topshiriqqa aylantirib, tayyor loyiha papkasini olaman va uni Visual Studio'da ishga tushiraman. Hozir shu yo'nalishda yangi loyihalar ustida ishlayapman.</p><div class="tags"><span>Prompt yozish</span><span>Python</span><span>Visual Studio</span></div></div>
+    </article>
+  </section>
+
+  <section id="aloqa" class="page">
+    <h2>Bog'lanish</h2>
+    <form id="form">
+      <label>Ismingiz <input name="name" required maxlength="80"></label>
+      <label>Telegram yoki telefoningiz <input name="contact" required maxlength="80"></label>
+      <label>Xabar <textarea name="message" required maxlength="2000"></textarea></label>
+      <button class="btn" type="submit">Xabarni yuborish</button>
+      <p id="status" role="status"></p>
+    </form>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
